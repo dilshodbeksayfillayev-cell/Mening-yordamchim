@@ -7,6 +7,7 @@ import { MAIN_KEYBOARD } from "../lib/owner.js";
 const RELEASE_NOTES = `🆕 Bot yangilandi!
 
 Yangi imkoniyatlar:
+🤫 Siz biror chatda o'zingiz yozsangiz, bot o'sha chatga 10 daqiqa aralashmaydi — 1–2 daqiqa to'xtab qolsangiz ham suhbatdoshingizga yozib yubormaydi. Vaqtni ⚙️ Sozlamalar'dan o'zgartirasiz (0/5/10/30/60 daq) yoki «men yozgach 30 daqiqa jim tur» deb yozing
 🎛 Pastda qulay tugmalar paydo bo'ldi — hisobot, chatlar, profil, ish vaqti, sozlamalar, sinov, PDF
 🗣 Endi menga oddiy so'z bilan buyruq bera olasiz: «ish vaqtimni 9 dan 18 gacha qil», «profilimga qo'sh: …», «Alisherga yoz: …», «botni to'xtat»
 📄 Mijoz rasmlarini yuborib «PDF qilib ber» desa — bot rasmlarni bitta PDF qilib beradi. Siz ham shu yerga rasm tashlab PDF qildira olasiz

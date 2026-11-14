@@ -8,6 +8,7 @@ Telegram Business orqali shaxsiy akkauntingizga ulanadi va mijozlarga siz noming
 - Matn, rasm, ovozli xabar, video/dumaloq video, PDF va fayllarni tushunadi
 - Havola yoki APK/EXE/ZIP kabi xavfli fayl kelsa — ochmaydi, suhbatni egasiga uzatadi
 - "Yozmoqda..." va tabiiy kechikish; ketma-ket xabarlarni bitta javobga yig'adi
+- Siz chatda o'zingiz yozsangiz, bot o'sha chatda 10 daqiqa (sozlanadi) aralashmaydi
 - Mijoz so'rasa, rasmlarini PDF qilib beradi
 - Buyurtma / shikoyat / shoshilinch / jiddiy holatda egasiga darhol xabar va suhbatni uzatish
 - Egasi uchun bot ichida tugmali menyu: hisobot, chatlar, profil, ish vaqti, sozlamalar, sinov, PDF
