@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/telegram.js": {
+      "includeFiles": "profile.md",
+      "maxDuration": 120
+    }
+  },
+  "crons": [
+    { "path": "/api/report", "schedule": "0 16 * * *" }
+  ]
+}
