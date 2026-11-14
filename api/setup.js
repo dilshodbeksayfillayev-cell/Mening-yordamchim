@@ -1,12 +1,14 @@
 import { tg, webhookSecret, notifyOwner } from "../lib/telegram.js";
 import { dbEnabled, kvGet, kvSet } from "../lib/db.js";
 import { currentModel } from "../lib/ai.js";
-import { getFlags } from "../lib/settings.js";
+import { getFlags, getAiKey } from "../lib/settings.js";
 import { MAIN_KEYBOARD } from "../lib/owner.js";
 
 const RELEASE_NOTES = `🆕 Bot yangilandi!
 
 Yangi imkoniyatlar:
+🔑 AI (OpenRouter) kalitini endi shu botning o'zida almashtirasiz: ⚙️ Sozlamalar → 🔑 AI kalitini almashtirish. Vercel'ga kirish shart emas; kalitli xabaringiz chatdan avtomatik o'chiriladi
+🚨 Bot mijozga javob bera olmasa (kalit noto'g'ri, pul tugagan) — darhol sizga xabar beradi
 ⚡ Bot endi tezroq javob beradi: AI javob tayyorlayotganda mijoz «yozmoqda...» ni ko'radi
 ⏱ Javobdan oldin kutish vaqtini o'zingiz yozasiz (soniyada): ⚙️ Sozlamalar → ⏱ Kutish
 🤫 Siz chatda o'zingiz yozsangiz, bot o'sha chatga aralashmaydi — necha soniya ekanini ⚙️ Sozlamalar → 🤫 Jimlik'da yozasiz
@@ -75,6 +77,7 @@ export async function GET(request) {
       webhook: { url: info.url, pending: info.pending_update_count, last_error: info.last_error_message ?? null },
       database: dbEnabled() ? "ulangan" : "ulanmagan (ixtiyoriy)",
       flags: await getFlags(),
+      ai_key: (await getAiKey())?.source ?? "yo'q",
       owner_notified: announced,
       env,
     });
